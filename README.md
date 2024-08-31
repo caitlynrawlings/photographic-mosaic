@@ -7,7 +7,7 @@ This repository contains a Python-based tool for generating photographic mosaics
 
 Python 3.6+: Make sure Python is installed on your system.  
 
-Clone the repository and cd into the project directory.
+Clone the [repository](https://github.com/caitlynrawlings/photographic-mosaic) and cd into the project directory.
 
 Install the required Python libraries using pip with either:  
 
