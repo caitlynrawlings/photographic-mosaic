@@ -21,6 +21,9 @@ def image_of_images(main_image_path, sub_images_folder, final_image_path, monoch
     divisor = max(width, height) // 200
     image = image.resize((max(width // divisor, 1), max(height // divisor, 1)))
 
+    # turn main image to 2d array of rgb vallues
+    pixels = np.array(image.convert('RGB'))
+
     print_progress("Resizing sub images")
 
     # iterate through sub_images_folder and put all the image objects in an array
@@ -38,9 +41,6 @@ def image_of_images(main_image_path, sub_images_folder, final_image_path, monoch
             sub_images.append(make_square(file_path, monochrome))
     
     print_progress("Recoloring sub images")
-
-    # turn main image to 2d array of rgb vallues
-    pixels = np.array(image)
 
     # Initialize the 2D array to store recolored sub-images
     sub_images_arr = [[None for _ in range(len(pixels[0]))] for _ in range(len(pixels))]
