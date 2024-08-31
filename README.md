@@ -29,7 +29,7 @@ There are three required user inputs.
 
 These can be entered as command line args or if omitted, the user will be prompted to enter these values in the console. 
 
-There is one additional option to make the sub images monochromatic that must be passed through the command line. Default behavior is non-monochromatic. View [Screenshots](##screenshots) for examples of these outputs.
+There is one additional option to make the sub images monochromatic that must be passed through the command line. Default behavior is non-monochromatic. View [Screenshots](#screenshots) for examples of these outputs.
 
 ### Command line args
 Main image file path:
